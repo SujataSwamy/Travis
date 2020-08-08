@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Firebase service account decrypt
-  - openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv -in demotravistoday-5efbbe6ecc64.json.enc -out /tmp/demotravistoday-5efbbe6ecc64.json -d
+   - openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv -in demotravistoday-d21d9cfbd957.json.enc -out /tmp/demotravistoday-d21d9cfbd957.json -d
 
 # Firebase setup
 wget --quiet --output-document=/tmp/google-cloud-sdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/google-cloud-sdk.tar.gz
@@ -18,7 +18,7 @@ gcloud config set project travisdemo-646f8
 
 
 # Activate cloud credentials
-gcloud auth activate-service-account --key-file /tmp/demotravistoday-5efbbe6ecc64.json
+gcloud auth activate-service-account --key-file /tmp/demotravistoday-d21d9cfbd957.json
 
 # List available options for logging purpose only (so that we can review available options)
 gcloud firebase test android models list
