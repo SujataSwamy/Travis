@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "909272030520",
+    "firebase_url": "https://travisdemo-646f8.firebaseio.com",
+    "project_id": "travisdemo-646f8",
+    "storage_bucket": "travisdemo-646f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909272030520:android:21f8b09934e433c6e7f5cd",
+        "android_client_info": {
+          "package_name": "com.app.travisdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909272030520-9r97ai60gfhhoota1chnpeovb13gllpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv_BMECW0BA79GbWwiBxXXgGOkt5KCVIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909272030520-9r97ai60gfhhoota1chnpeovb13gllpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
