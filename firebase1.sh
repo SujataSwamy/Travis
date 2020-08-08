@@ -18,7 +18,7 @@ gcloud config set project travisdemo-646f8
 
 
 # Activate cloud credentials
-gcloud auth activate-service-account --key-file /tmp/demotravistoday-5efbbe6ecc64.json.json
+gcloud auth activate-service-account --key-file /tmp/demotravistoday-5efbbe6ecc64.json
 
 # List available options for logging purpose only (so that we can review available options)
 gcloud firebase test android models list
