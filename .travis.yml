@@ -30,9 +30,8 @@ before_script:
   - gcloud version
   - gcloud config set account sujatagopalswamy@gmail.com
   - gcloud config set project travisdemo-646f8
-#  - gcloud auth activate-service-account  travisci@travisdemo-646f8.iam.gserviceaccount.com --key-file=/tmp/travisdemo-646f8-e260124a0331.json --project=travisdemo-646f8
-  - gcloud auth activate-service-account --key-file /tmp/travisdemo-646f8-e260124a0331.json
-
+  - gcloud auth activate-service-account  travisci@travisdemo-646f8.iam.gserviceaccount.com --key-file=travisdemo-646f8-e260124a0331.json --project=travisdemo-646f8
+#  - gcloud auth activate-service-account --key-file /tmp/travisdemo-646f8-e260124a0331.js
 
 script:
   - ./firebase1.sh
