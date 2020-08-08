@@ -1,37 +1,40 @@
 language: android
 jdk:
-  - oraclejdk8
+- oraclejdk8
 sudo: required
 dist: trusty
 env:
   global:
-    - BRANCH_NAME=master
-    - ANDROID_BUILD_TOOLS=29.0.3
+  - BRANCH_NAME=master
+  - ANDROID_BUILD_TOOLS=29.0.3
 android:
   components:
-    - android-29
-    - build-tools-$ANDROID_BUILD_TOOLS
-    - extra-google-google_play_services
+  - android-29
+  - build-tools-$ANDROID_BUILD_TOOLS
+  - extra-google-google_play_services
   licenses:
-    - ".+"
+  - ".+"
 before_cache:
-  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
   directories:
-    - "$HOME/.gradle/caches/"
-    - "$HOME/.gradle/wrapper/"
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
 before_install:
-- openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv -in travisdemo-646f8-e260124a0331.json.enc -out /tmp/travisdemo-646f8-e260124a0331.json -d
-  - yes | sdkmanager "platforms;android-29"
-    - mkdir "$ANDROID_HOME/licenses" || true
+- openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv
+  -in travisdemo-646f8-e260124a0331.json.enc -out /tmp/travisdemo-646f8-e260124a0331.json
+  -d
+- openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv
+  -in travisdemo-646f8-e260124a0331.json.enc -out /tmp/travisdemo-646f8-e260124a0331.json
+  -d - yes | sdkmanager "platforms;android-29" - mkdir "$ANDROID_HOME/licenses" ||
+  true
 before_script:
-  - env
-  - gcloud version || true
-  - gcloud version
-  - gcloud config set account sujatagopalswamy@gmail.com
-  - gcloud config set project travisdemo-646f8
-  - gcloud auth activate-service-account travisci@travisdemo-646f8.iam.gserviceaccount.com --key-file=/tmp/travisdemo-646f8-e260124a0331.json --project=travisdemo-646f8
-#  - gcloud auth activate-service-account --key-file /tmp/travisdemo-646f8-e260124a0331.js
-
+- env
+- gcloud version || true
+- gcloud version
+- gcloud config set account sujatagopalswamy@gmail.com
+- gcloud config set project travisdemo-646f8
+- gcloud auth activate-service-account travisci@travisdemo-646f8.iam.gserviceaccount.com
+  --key-file=/tmp/travisdemo-646f8-e260124a0331.json --project=travisdemo-646f8
 script:
-  - ./firebase1.sh
+- "./firebase1.sh"
