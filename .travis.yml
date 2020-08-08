@@ -21,7 +21,7 @@ cache:
     - "$HOME/.gradle/caches/"
     - "$HOME/.gradle/wrapper/"
 before_install:
-  - openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv -in demotravistoday-d21d9cfbd957.json.enc -out /tmp/demotravistoday-d21d9cfbd957.json -d
+- openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv -in demotravistoday-8c218be67d1f.json.enc -out /tmp/demotravistoday-8c218be67d1f.json -d
   - yes | sdkmanager "platforms;android-29"
   - mkdir "$ANDROID_HOME/licenses" || true
 before_script:
