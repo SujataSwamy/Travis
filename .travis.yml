@@ -25,6 +25,7 @@ before_install:
     - yes | sdkmanager "platforms;android-29"
     - mkdir "$ANDROID_HOME/licenses" || true
 before_script:
+
   - env
   - gcloud version || true
   - gcloud version
