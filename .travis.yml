@@ -24,5 +24,7 @@ before_install:
   - openssl aes-256-cbc -K $encrypted_bbe4408b9dd8_key -iv $encrypted_bbe4408b9dd8_iv -in demotravistoday-5efbbe6ecc64.json.enc -out /tmp/demotravistoday-5efbbe6ecc64.json -d
   - yes | sdkmanager "platforms;android-29"
   - mkdir "$ANDROID_HOME/licenses" || true
+before_script:
+  - env
 script:
   - ./firebase1.sh

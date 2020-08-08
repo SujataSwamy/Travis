@@ -11,7 +11,7 @@ tar zxf /tmp/google-cloud-sdk.tar.gz --directory /opt
 source /opt/google-cloud-sdk/path.bash.inc
 
 # Setup and configure the project
-#gcloud components update
+gcloud components update
 echo travisdemo-646f8
 
 gcloud config set project travisdemo-646f8
