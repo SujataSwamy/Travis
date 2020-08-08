@@ -12,9 +12,9 @@ source /opt/google-cloud-sdk/path.bash.inc
 
 # Setup and configure the project
 gcloud components update
-echo 	demotravistoday
+echo demotravistoday
 
-gcloud config set project 	demotravistoday
+gcloud config set project demotravistoday
 
 
 # Activate cloud credentials

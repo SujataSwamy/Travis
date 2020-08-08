@@ -26,11 +26,11 @@ before_install:
     - mkdir "$ANDROID_HOME/licenses" || true
 before_script:
   - env
-#  - gcloud version || true
-#  - gcloud version
-#  - gcloud config set account sujatagopalswamy@gmail.com
-#  - gcloud config set project PROJECT_ID
-#  - gcloud auth activate-service-account traviscidemofinal@demotravistoday.iam.gserviceaccount.com --key-file=/tmp/demotravistoday-8c218be67d1f.json --project=travisdemo-646f8
+  - gcloud version || true
+  - gcloud version
+  - gcloud config set account sujatagopalswamy@gmail.com
+  - gcloud config set project demotravistoday
+  - gcloud auth activate-service-account traviscidemofinal@demotravistoday.iam.gserviceaccount.com --key-file=/tmp/demotravistoday-8c218be67d1f.json --project=travisdemo-646f8
 #  - gcloud auth activate-service-account --key-file /tmp/demotravistoday-8c218be67d1f.json
 
 
