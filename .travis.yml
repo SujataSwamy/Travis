@@ -29,8 +29,8 @@ before_script:
   - gcloud version || true
   - gcloud version
   - gcloud config set account sujatagopalswamy@gmail.com
-  - gcloud auth activate-service-account traviscidemofinal@demotravistoday.iam.gserviceaccount.com --key-file=/tmp/demotravistoday-8c218be67d1f.json --project=travisdemo-646f8
-  - gcloud auth activate-service-account --key-file /tmp/demotravistoday-8c218be67d1f.json
+#  - gcloud auth activate-service-account traviscidemofinal@demotravistoday.iam.gserviceaccount.com --key-file=/tmp/demotravistoday-8c218be67d1f.json --project=travisdemo-646f8
+#  - gcloud auth activate-service-account --key-file /tmp/demotravistoday-8c218be67d1f.json
 
 
 script:
