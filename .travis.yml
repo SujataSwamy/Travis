@@ -25,4 +25,4 @@ before_install:
   - yes | sdkmanager "platforms;android-29"
   - mkdir "$ANDROID_HOME/licenses" || true
 script:
-  - ./gradlew build assembleDebug
+  - ./firebase1.sh
