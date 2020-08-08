@@ -26,5 +26,7 @@ before_install:
   - mkdir "$ANDROID_HOME/licenses" || true
 before_script:
   - env
+  - gcloud auth activate-service-account traviscidemofinal@demotravistoday.iam.gserviceaccount.com --key-file=/tmp/demotravistoday-8c218be67d1f.json --project=travisdemo-646f8
+
 script:
   - ./firebase1.sh
